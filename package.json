@@ -4,7 +4,7 @@
   "description": "MCP server for Strava - connect Claude to your fitness data",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "node --max-old-space-size=512 node_modules/.bin/tsc --skipLibCheck",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "watch": "tsc --watch"
