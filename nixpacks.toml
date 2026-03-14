@@ -2,4 +2,4 @@
 NODE_OPTIONS = "--max-old-space-size=256"
 
 [phases.build]
-cmds = ["npm ci --no-audit --no-fund", "npm run build"]
+cmds = ["npm ci --no-audit --no-fund --cache /tmp/npm-cache", "npm run build"]
